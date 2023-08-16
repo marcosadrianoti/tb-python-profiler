@@ -2,6 +2,16 @@ from pro_filer.actions.main_actions import show_preview  # NOQA
 import pytest
 
 
+long_response = (
+    "Found 6 files and 7 directories\n"
+    "First 5 files: ['a', 'b', 'c', 'd', 'e']\n"
+    "First 5 directories: ['a', 'b', 'c', 'd', 'e']\n"
+)
+short_response = (
+    "Found 0 files and 0 directories\n"
+)
+
+
 @pytest.mark.parametrize(
     'context, response',
     [
@@ -10,16 +20,14 @@ import pytest
             'all_files': ['a', 'b', 'c', 'd', 'e', 'f'],
             'all_dirs': ['a', 'b', 'c', 'd', 'e', 'f', 'g']
           },
-          "Found 6 files and 7 directories\n"
-          "First 5 files: ['a', 'b', 'c', 'd', 'e']\n"
-          "First 5 directories: ['a', 'b', 'c', 'd', 'e']\n"
+          long_response
       ),
       (
           {
             'all_files': [],
             'all_dirs': []
           },
-          "Found 0 files and 0 directories\n"
+          short_response
       )
     ]
   )

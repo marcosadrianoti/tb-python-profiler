@@ -1,4 +1,4 @@
-"""Arquivo que estudantes devem editar"""
+"""Arquivo que estudantes devem editar."""
 
 
 def show_deepest_file(context):

@@ -37,3 +37,26 @@ def test_show_disk_usage(context, capsys):
         assert "temp_file2.txt':        10 (33%)" in out_disk_usage
         assert "temp_file3.txt':        10 (33%)" in out_disk_usage
         assert "Total size: 30" in out_disk_usage
+
+
+def get_list_order_by_id(out_disk_usage, files):
+    list_files = []
+    for file in files:
+        if file in out_disk_usage:
+            index = out_disk_usage.index(file)
+            list_files.append((file, index))
+    list_files.sort(key=lambda x: x[1])
+    return [file for file, _ in list_files]
+
+
+def test_show_disk_usage_order(context, capsys):
+    show_disk_usage(context)
+    captured = capsys.readouterr()
+    out_disk_usage = captured.out
+    files = ['temp_file1.txt', 'temp_file2.txt', 'temp_file3.txt']
+    list_ordered = get_list_order_by_id(out_disk_usage, files)
+    assert list_ordered == [
+        'temp_file3.txt',
+        'temp_file2.txt',
+        'temp_file1.txt'
+    ]

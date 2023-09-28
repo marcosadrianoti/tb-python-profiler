@@ -15,10 +15,12 @@ Projeto desenvolvido por mim durante o curso de Desenvolvimento Web na Trybe. Di
 <details>
 <summary><strong> Requisitos do projeto:</strong></summary>
 
-  *  Implementar testes para a classe `Ingredient`, que se encontra no módulo `src/models/ingredient.py`.
-  *  Implementar testes para a classe `Dish`, que se encontra no módulo `src/models/dish.py`.
-  *  Implementar a classe `MenuData` que fará todo o mapeamento de pratos e ingredientes baseado nos arquivo csv disponibilizado. Ela se encontra no módulo `src/services/menu_data.py`.
-  *  Implementar o método `get_main_menu` dentro da classe `MenuBuilder`, que gera um `DataFrame` com os cardápios. Ele se encontra no arquivo `src/services/menu_builder.py`.
+  *  Eliminar o(s) bug(s) da função `show_deepest_file`.
+  *  Eliminar o(s) bug(s) da função `find_file_by_name`.
+  *  Criar testes para a função `show_preview`.
+  *  Criar testes para a função `show_details`.
+  *  Criar testes para a função `show_disk_usage`.
+  *  Criar testes para a função `find_duplicate_files`.
 </details>
   
 ## Rodando o projeto localmente
@@ -33,13 +35,13 @@ cd meu-diretorio
 Clone o projeto com o comando `git clone`:
 
 ```bash
-git clone git@github.com:marcosadrianoti/tb-restaurant-orders.git
+git clone git@github.com:marcosadrianoti/tb-python-profiler.git
 ```
 
 Acesse o diretório do projeto com o comando `cd`:
 
 ```bash
-cd tb-restaurant-orders
+cd tb-python-profiler
 ```
 
 crie o ambiente virtual:

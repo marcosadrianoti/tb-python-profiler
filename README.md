@@ -1,4 +1,4 @@
-# Projeto Python ProFiler! :plate_with_cutlery:
+# Projeto Python ProFiler! :keyboard:
 Projeto desenvolvido por mim durante o curso de Desenvolvimento Web na Trybe. Divulgado aqui como portfólio de aprendizado.
 
 <details>

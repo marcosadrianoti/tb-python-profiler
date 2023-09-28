@@ -6,7 +6,7 @@ Projeto desenvolvido por mim durante o curso de Desenvolvimento Web na Trybe. Di
  
   * Trabalhar com uma aplicação com uma interface de linha de comando (CLI) que recebe como entrada um caminho (diretório ou arquivo) e gera um relatório com informações sobre o caminho informado.
   * Corrigir os bugs e implementar os testes para garantir que a aplicação funcione corretamente.
-  * Verificamos se sou capaz de:
+  * Verificar se sou capaz de:
     * Encontrar bugs no código de uma aplicação escrita em Python.
     * Corrigir bugs no código de uma aplicação escrita em Python.
     * Criar testes para uma aplicação escrita em Python.

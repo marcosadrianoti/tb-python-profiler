@@ -64,3 +64,7 @@ Execute o comando pro-filer seguido de --help para obter orientação como usar 
 ```bash
 pro-filer --help
 ```
+Execute os testes com:
+```bash
+python3 -m pytest
+```
